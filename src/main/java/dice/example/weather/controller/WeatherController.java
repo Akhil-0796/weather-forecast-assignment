@@ -34,8 +34,8 @@ public class WeatherController {
      */
     @GetMapping("/RapidApiGetForecastSummaryByLocationName")
     public ResponseEntity<ForecastLocation> getForecastSummary(@RequestParam String city,
-                                                               @RequestHeader("X-Client-ID") String clientId,
-                                                               @RequestHeader("X-Client-Secret") String clientSecret) throws JsonProcessingException {
+                                                               @RequestHeader("Client-ID") String clientId,
+                                                               @RequestHeader("Client-Secret") String clientSecret) throws JsonProcessingException {
         // Perform authentication with clientId and clientSecret
         if (!authenticate(clientId, clientSecret)) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
