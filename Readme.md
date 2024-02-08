@@ -35,8 +35,8 @@ This controller can be used to retrieve weather forecasts for specific locations
 - **Parameters:**
     - `city` (String, required): Name of the city for which weather forecast is requested.
 - **Headers:**
-    - `X-Client-ID` (String, required): Client ID for authentication.
-    - `X-Client-Secret` (String, required): Client secret for authentication.
+    - `Client-ID` (String, required): Client ID for authentication.
+    - `Client-Secret` (String, required): Client secret for authentication.
 - **Response:**
     - `200 OK`: Returns the weather forecast summary for the specified location.
     - `401 Unauthorized`: If authentication fails.

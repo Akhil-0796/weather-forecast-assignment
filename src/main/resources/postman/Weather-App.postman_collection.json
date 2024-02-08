@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "b1e0e33a-1413-4d1e-b426-203ab5e465ac",
+		"name": "Weather-App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12315524"
+	},
+	"item": [
+		{
+			"name": "forecast-summary",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "2345",
+						"type": "text"
+					},
+					{
+						"key": "Client-Secret",
+						"value": "sdfgh",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/RapidApiGetForecastSummaryByLocationName?city=Berlin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"RapidApiGetForecastSummaryByLocationName"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Berlin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forecast-hourly",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Client-ID",
+						"value": "",
+						"type": "text"
+					},
+					{
+						"key": "Client-Secret",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/hourly-forecast?city=Berlin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hourly-forecast"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Berlin"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
